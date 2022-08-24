@@ -3,10 +3,13 @@ package kcckit
 import "github.com/ethereum/go-ethereum/common"
 
 type Config struct {
-	Token   Token
-	Mojito  Mojito
-	Torches Torches
-	Chain   Chain
+	Token         Token
+	Mojito        Mojito
+	Torches       Torches
+	Chain         Chain
+	Witnet        Witnet
+	TorchesOralce TorchesOralce
+	MojitoOracle  MojitoOracle
 }
 
 type Token struct {
@@ -94,4 +97,38 @@ type Chain struct {
 	WSUrl      string
 	Multicall  string
 	Multicall2 string
+}
+
+type Witnet struct {
+	WitnetPriceRouter string
+	BtcUsdPairId      string
+	EthUsdPairId      string
+	KcsUsdtPairId     string
+	MjtKcsPairId      string
+	UsdtUsdPairId     string
+	UsdcUsdPairId     string
+}
+
+type MojitoOracle struct {
+	MojitoOracleAddr string
+	MOProxyAddr      string
+	BtcUsdtPairId    string
+	EthUsdtPairId    string
+	KcsUsdtPairId    string
+	MjtUsdtPairId    string
+	UsdcUsdtPairId   string
+}
+
+type TorchesOralce struct {
+	BtcUsd  EACAndOCR
+	EthUsd  EACAndOCR
+	KcsUsd  EACAndOCR
+	MjtUsd  EACAndOCR
+	UsdtUsd EACAndOCR
+	UsdcUsd EACAndOCR
+}
+
+type EACAndOCR struct {
+	EAC string
+	OCR string
 }

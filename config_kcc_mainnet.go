@@ -97,6 +97,50 @@ func GetConfigForKCC() *Config {
 				},
 			},
 		},
+		MojitoOracle: MojitoOracle{
+			MojitoOracleAddr: "0x6ED03dE8D8BA4c90E7C8A2317bED899AF1959491",
+			MOProxyAddr:      "0x09515646b5833526Dff12FAE9B03754c7f0E0a8F",
+			BtcUsdtPairId:    "0x9f3a02ad48a53d7a78ecde8447369718dad4cb83d1dbb6e852af344b6958696f",
+			EthUsdtPairId:    "0xc27a9ec66481b5654fa106f0ff4953f464c930ddeadc29dff13c50670c0d8cf7",
+			KcsUsdtPairId:    "0x10e4b55f0e4ec1ba07c58b6aac7d37f5a218efc2c3f4f4b637934b65573eb19d",
+			MjtUsdtPairId:    "0xcef32d3651d74bf39b0f08c22a7ec83cc66c029645f1a915ee050fb74242e21a",
+			UsdcUsdtPairId:   "0x0cf25c1cf37d7aba87b730218eba67b54738879302f4ebbc32f8b11505db2084",
+		},
+		Witnet: Witnet{
+			WitnetPriceRouter: "0xD39D4d972C7E166856c4eb29E54D3548B4597F53",
+			BtcUsdPairId:      "0x24beead43216e490aa240ef0d32e18c57beea168f06eabb94f5193868d500946",
+			EthUsdPairId:      "0x3d15f7018db5cc80838b684361aaa100bfadf8a11e02d5c1c92e9c6af47626c8",
+			KcsUsdtPairId:     "0x31debffc453c5d04a78431e7bc28098c606d2bbeea22f10a35809924a201a977",
+			MjtKcsPairId:      "0x2dcfd5546926b857978957b40dcd5164cc788079b46ce9c1abbaedac07f96837",
+			UsdtUsdPairId:     "0x538f5a25b39995a23c24037d2d38f979c8fa7b00d001e897212d936e6f6556ef",
+			UsdcUsdPairId:     "0x4c80cf2e5b3d17b98f6f24fc78f661982b8ef656c3b75a038f7bfc6f93c1b20e",
+		},
+		TorchesOralce: TorchesOralce{
+			BtcUsd: EACAndOCR{
+				EAC: "0xFAce3f85602A8dc013217b61a97a9AFE7B2F276F",
+				OCR: "0x13cc7A061Ee93157f2bcE90645cD9f754428e08A",
+			},
+			EthUsd: EACAndOCR{
+				EAC: "0x72E10386eBE0E3175f62BF3Edfc9A64aC3c5918a",
+				OCR: "0x0948C486F5CEDfb22CBc55DD2a3C9841043550Dd",
+			},
+			KcsUsd: EACAndOCR{
+				EAC: "0xAFC9c849b1a784955908d91EE43A3203fBC1f950",
+				OCR: "0xF12d64D3d51AC263cd5e41fd6b634E9A55F2A0d9",
+			},
+			MjtUsd: EACAndOCR{
+				EAC: "0x5eF7D0B6C63c9F0b0b056416B2dBA95cC02473a3",
+				OCR: "0xa10DD65F2231Aea80f7d3BC53789d520620A4291",
+			},
+			UsdtUsd: EACAndOCR{
+				EAC: "0x001c1a168ba2a36D01a99542740C375c51615161",
+				OCR: "0xbFBE130ce1302118e90148eeaeb5Ce0ad73a0c11",
+			},
+			UsdcUsd: EACAndOCR{
+				EAC: "0x1A165db46d431804B0082eb5BEbc307ffb97e31b",
+				OCR: "0x0f10d056b488ED7ad72EabE677A2fa5Bd665ef67",
+			},
+		},
 		Chain: Chain{
 			Multicall2: "0x7c1c85c39d3d6b6ecb811dfe949b9c23f6e818b0",
 			Multicall:  "0x83a7e42a1190346073323dfaf40d69f8f8c076a4",
