@@ -47,6 +47,18 @@ func GetConfigForKCC() *Config {
 			CFXAddress:   CFXAddr,
 			LINKAddress:  LinkAddr,
 		},
+		Torches: Torches{
+			TorchesTroller: "0xfbAFd34A4644DC4f7c5b2Ae150279162Eb2B0dF6",
+			CompoundLens:   "0x5B0Ad1D8d438B00b0730134c8F0BaEf3ed445a0A",
+			TToken: TToken{
+				TKCS:  "0xf9401F5246185eD3Fd0EF48f4775250d32069AEf",
+				TUSDT: "0x92dBEA1Ac6278a0b4AEC11388C94F8fAFBE246C1",
+				TUSDC: "0x23eBfcC4aB0Ddf47E7b99B1eb1B9eA790f3d646D",
+				TBTC:  "0x413170815cF21B16ddeB180aAd0FFD00C80D31f8",
+				TETH:  "0xF7310bD46D48e8d2BF8d12f69B6cCdD12fB4E0C5",
+				TSKCS: "0x0868713842d2e296CeF26c86d736AC7C374A5199",
+			},
+		},
 		Mojito: Mojito{
 			MojitoFactory:    "0x79855a03426e15ad120df77efa623af87bd54ef3",
 			MojitoRouter:     "0x8c8067ed3bc19acce28c1953bfc18dc85a2127f7",

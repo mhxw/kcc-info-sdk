@@ -3,9 +3,10 @@ package kcckit
 import "github.com/ethereum/go-ethereum/common"
 
 type Config struct {
-	Token  Token
-	Mojito Mojito
-	Chain  Chain
+	Token   Token
+	Mojito  Mojito
+	Torches Torches
+	Chain   Chain
 }
 
 type Token struct {
@@ -30,6 +31,21 @@ type Token struct {
 	UNIAddress   string
 	CFXAddress   string
 	LINKAddress  string
+}
+
+type Torches struct {
+	TorchesTroller string
+	CompoundLens   string
+	TToken         TToken
+}
+
+type TToken struct {
+	TKCS  string
+	TUSDT string
+	TUSDC string
+	TBTC  string
+	TETH  string
+	TSKCS string
 }
 
 type Mojito struct {
